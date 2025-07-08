@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js" defer></script>
+</head>
+<body>
+  <div id="main-container">
+    
+    <!-- Informações de endereço -->
+    <div id="address-container">
+      <div class="fade"></div>
+      <div id="address-content">
+        <h2><ion-icon name="navigate-outline"></ion-icon> Endereço</h2>
+        <p>Rua das Flores, 133</p>
+        <h2><ion-icon name="call-outline"></ion-icon> Telefone</h2>
+        <p>(48) 9999-9999</p>
+        <h2><ion-icon name="mail-outline"></ion-icon> E-mail</h2>
+        <p>meuemail@email.com</p>
+      </div>
+    </div>
+
+    <!-- Formulário de contato -->
+    <div id="form-container">
+        <h2>Entre em contato com a Tech Solutions</h2>
+        <form id="contact-form">
+            <label for="name">Seu nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required />
+
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="nome@empresa.com" required />
+
+            <label for="empresa">Empresa (opcional):</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+
+            <label for="msg">Como podemos ajudar?</label>
+            <textarea id="msg" name="msg" placeholder="Descreva sua necessidade..." required></textarea>
+
+            <input type="submit" value="Solicitar atendimento" />
+        </form>
+
+        <div id="form-success" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+            ✔️ Mensagem enviada com sucesso! Retornaremos em breve.
+        </div>
+    </div>
+
+  </div>
+</body>
+</html>
